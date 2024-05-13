@@ -1,0 +1,125 @@
+:root {
+  --white-color: #f9f8f8;
+  --violet-color: #9b3bce;
+  --violet-hover-color: #a73bce;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../assets/universe.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 580px;
+  height: 350px;
+  background-color: rgba(0, 12, 52, 0.6);
+  border-radius: 10px;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+#header img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+button {
+  background-color: var(--violet-color);
+  color: var(--white-color);
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: var(--violet-hover-color);
+}
+
+#time {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 60px;
+  color: var(--white-color);
+}
+
+.milliseconds,
+.seconds,
+.minutes {
+  margin: 0 10px;
+  width: 12%;
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    width: 90%;
+    height: auto;
+    max-height: 80vh;
+    padding: 40px;
+  }
+
+  #header {
+    font-size: 18px;
+  }
+
+  #time {
+    font-size: 48px;
+  }
+
+  button {
+    font-size: 16px;
+    width: 80px;
+  }
+
+  .milliseconds,
+  .seconds,
+  .minutes {
+    margin: 0;
+    width: 20%;
+  }
+}

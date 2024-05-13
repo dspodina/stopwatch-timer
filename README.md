@@ -14,6 +14,4 @@ This is a simple stopwatch app built using HTML, CSS, and JavaScript. It provide
 2. Open the `index.html` file in your web browser.
 3. Click on the "Start" button to begin the stopwatch.
 4. Click on the "Stop" button to pause the stopwatch.
-5. Click on the "Reset" button to set the stopwatch back to 0.# stopwatch
-# stopwatch-timer
-# stopwatch-timer
+5. Click on the "Reset" button to set the stopwatch back to 0.
