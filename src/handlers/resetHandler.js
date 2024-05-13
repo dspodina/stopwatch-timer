@@ -1,6 +1,6 @@
 import data from "../data.js";
 import dom from "../dom.js";
-import updTimeDom from "../components/updTimeDOM.js";
+import updTimeDom from "../components/updTimeDom.js";
 
 const resetHandler = () => {
   if (data.intervalId) 
